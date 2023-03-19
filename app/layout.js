@@ -1,6 +1,6 @@
 import Navabr from "@/components/hero/Navabr";
 import "./globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css";
 
 export const metadata = {
   title: "IMS",
@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="scroll-smooth">
         <Navabr />
         {children}
       </body>

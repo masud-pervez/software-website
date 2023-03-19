@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#image1{
+  animation: up-down 0.3s ease-in-out 1s forwards infinite;
+}
+
+path{
+  animation: up-down 0.3s ease-in-out 1s forwards infinite;
+}
