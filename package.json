@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "eslint": "8.36.0",
