@@ -3,32 +3,29 @@ import Navabr from "@/components/Navabr";
 import "./globals.css";
 import "aos/dist/aos.css";
 import Footer from "@/components/Footer";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Aos from "aos";
 import Loading from "@/components/Loading";
+// import Loading from "@/components/Loading";
 
 export default function RootLayout({ children }) {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 200);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 200);
     Aos.init();
   }, []);
 
   return (
     <html lang="en">
       <body className="scroll-smooth">
-        {loading ? (
-          <Loading />
-        ) : (
-          <>
-            <Navabr />
-            {children}
-            <Footer />
-          </>
-        )}
+        <Suspense fallback={<Loading />}>
+          <Navabr />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

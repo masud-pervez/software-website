@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 .member {
   width: 280px;
   height: 300px;

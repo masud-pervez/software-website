@@ -8,7 +8,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "logo-full": "url('/logo-full.png')",
+        logo: "url('/logo.png')",
+      },
+    },
   },
   plugins: [],
 };

@@ -11,7 +11,7 @@ import BlogSection from "@/components/home/BlogSection";
 
 const Home = () => {
   return (
-    <main>
+    <main className="scroll-smooth">
       <HeroSection />
       <WhatWeDoSection />
       <ProjectSection />

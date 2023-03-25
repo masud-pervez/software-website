@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -12,51 +13,85 @@ const Navbar = () => {
     }
   };
 
+  const pathname = usePathname();
+  console.log("pathname:", pathname);
+
   useEffect(() => {
     window.addEventListener("scroll", changeNavbarColor);
   }, []);
 
   return (
     <nav
-      class={`fixed top-0 w-full z-30 ${
-        colorChange && "bg-slate-100 shadow-md transition-all"
+      // data-aos="fade-down"
+      // data-aos-once="true"
+      className={`fixed transition ease-in-out top-0 w-full z-30  ${
+        colorChange ? "bg-slate-100 shadow-md" : "bg-transparent"
       }`}
     >
-      <div class="container mx-auto">
-        <div className="flex flex-row justify-center py-4">
-          <div className="w-3/4 flex flex-row justify-between items-center">
-            <a class="navbar-brand" href="/">
-              <img src="/logo-full.png" className="img-fluid w-48" alt="" />
-            </a>
-            <div className="md:block hidden">
-              <ul>
-                <li class="inline-block ml-5">
-                  <a class="text-lg text-slate-700" href="#">
-                    Home
-                  </a>
-                </li>
-                <li class="inline-block ml-5">
-                  <a class="text-lg text-slate-700" href="#">
-                    Feature
-                  </a>
-                </li>
-                <li class="inline-block ml-5">
-                  <a class="text-lg text-slate-700" href="#">
+      <div className="container mx-auto md:px-36 px-5">
+        <div className="flex flex-row justify-between items-center py-4">
+          <a className="navbar-brand" href="/">
+            <div className="lg:bg-[url('/logo-full.png')] bg-[url('/logo.png')]  w-48 h-10 bg-no-repeat bg-contain"></div>
+          </a>
+          <div className="md:block hidden">
+            <ul>
+              <li className="inline-block ml-5">
+                <a
+                  className={`text-lg ${
+                    pathname === "/" ? "text-orange-700" : "text-slate-700"
+                  }`}
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              {/* <li className="inline-block ml-5">
+                  <a
+                    className={`text-lg ${
+                      pathname === "/about"
+                        ? "text-orange-700"
+                        : "text-slate-700"
+                    }`}
+                    href="/about"
+                  >
                     About
                   </a>
-                </li>
-                <li class="inline-block ml-5">
-                  <a class="text-lg text-slate-700" href="#">
-                    Team
-                  </a>
-                </li>
-                <li class="inline-block ml-5">
-                  <a class="text-lg text-slate-700" href="#">
-                    Home
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </li> */}
+              <li className="inline-block ml-5">
+                <a
+                  className={`text-lg ${
+                    pathname === "/feature"
+                      ? "text-orange-700"
+                      : "text-slate-700"
+                  }`}
+                  href="/feature"
+                >
+                  Feature
+                </a>
+              </li>
+              <li className="inline-block ml-5">
+                <a
+                  className={`text-lg ${
+                    pathname === "/team" ? "text-orange-700" : "text-slate-700"
+                  }`}
+                  href="/team"
+                >
+                  Team
+                </a>
+              </li>
+              <li className="inline-block ml-5">
+                <a
+                  className={`text-lg ${
+                    pathname === "/contact"
+                      ? "text-orange-700"
+                      : "text-slate-700"
+                  }`}
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

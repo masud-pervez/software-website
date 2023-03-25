@@ -6,7 +6,7 @@ import { RxCross2, RxRocket } from "react-icons/rx";
 const PriceingSection = () => {
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="container mx-auto md:px-36 px-5">
         <div
           className="text-center py-10"
           data-aos="fade-up"
@@ -19,173 +19,171 @@ const PriceingSection = () => {
             Provide Awesome Pricing <br /> Plan
           </h1>
         </div>
-        <div className="flex justify-center">
-          <div className="md:w-3/4 grid md:grid-cols-3 gap-6 mb-10 md:p-0 p-5">
-            {/* basic */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-once="true"
-              className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
-            >
-              <div className="flex flex-row">
-                <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
-                  <RxRocket />
-                </span>
-                <div>
-                  <span className="text-xl">Basic Plan</span>
-                  <p className="font-bold">
-                    <span className="text-3xl">$29</span> /Mo
-                  </p>
-                </div>
+        <div className="grid md:grid-cols-3 gap-5 py-10">
+          {/* basic */}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+          >
+            <div className="flex flex-row">
+              <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
+                <RxRocket />
+              </span>
+              <div>
+                <span className="text-xl">Basic Plan</span>
+                <p className="font-bold">
+                  <span className="text-3xl">$29</span> /Mo
+                </p>
               </div>
-              <hr className="my-10" />
-              <ul>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Private cloud hosting</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Full security</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Hotline Support 24/7</span>
-                </li>
-              </ul>
-              <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
-                BUY NOW
-              </button>
             </div>
-            {/* Standard Plan */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-once="true"
-              className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
-            >
-              <div className="flex flex-row">
-                <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
-                  <BsFingerprint />
+            <hr className="my-10" />
+            <ul>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
                 </span>
-                <div>
-                  <span className="text-xl">Standard Plan</span>
-                  <p className="font-bold">
-                    <span className="text-3xl">$69</span> /Mo
-                  </p>
-                </div>
-              </div>
-              <hr className="my-10" />
-              <ul>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Private cloud hosting</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Full security</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Hotline Support 24/7</span>
-                </li>
-              </ul>
-              <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
-                BUY NOW
-              </button>
-            </div>
-            {/* Premium Plan */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-once="true"
-              className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
-            >
-              <div className="flex flex-row">
-                <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
-                  <FaCrown />
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
                 </span>
-                <div>
-                  <span className="text-xl">Premium Plan</span>
-                  <p className="font-bold">
-                    <span className="text-3xl">$129</span> /Mo
-                  </p>
-                </div>
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Private cloud hosting</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Full security</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Hotline Support 24/7</span>
+              </li>
+            </ul>
+            <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
+              BUY NOW
+            </button>
+          </div>
+          {/* Standard Plan */}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once="true"
+            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+          >
+            <div className="flex flex-row">
+              <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
+                <BsFingerprint />
+              </span>
+              <div>
+                <span className="text-xl">Standard Plan</span>
+                <p className="font-bold">
+                  <span className="text-3xl">$69</span> /Mo
+                </p>
               </div>
-              <hr className="my-10" />
-              <ul>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
-                    <BsCheck2 />
-                  </span>
-                  <span className="text-slate-600">Limited Acess Library</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Private cloud hosting</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Full security</span>
-                </li>
-                <li className="my-4 flex flex-row">
-                  <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
-                    <RxCross2 />
-                  </span>
-                  <span className="text-slate-600">Hotline Support 24/7</span>
-                </li>
-              </ul>
-              <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
-                BUY NOW
-              </button>
             </div>
+            <hr className="my-10" />
+            <ul>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
+                </span>
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
+                </span>
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Private cloud hosting</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Full security</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Hotline Support 24/7</span>
+              </li>
+            </ul>
+            <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
+              BUY NOW
+            </button>
+          </div>
+          {/* Premium Plan */}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-once="true"
+            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+          >
+            <div className="flex flex-row">
+              <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
+                <FaCrown />
+              </span>
+              <div>
+                <span className="text-xl">Premium Plan</span>
+                <p className="font-bold">
+                  <span className="text-3xl">$129</span> /Mo
+                </p>
+              </div>
+            </div>
+            <hr className="my-10" />
+            <ul>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
+                </span>
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-orange-200 p-1 rounded-full text-orange-500">
+                  <BsCheck2 />
+                </span>
+                <span className="text-slate-600">Limited Acess Library</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Private cloud hosting</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Full security</span>
+              </li>
+              <li className="my-4 flex flex-row">
+                <span className="mr-3 bg-rose-200 p-1 rounded-full text-rose-500">
+                  <RxCross2 />
+                </span>
+                <span className="text-slate-600">Hotline Support 24/7</span>
+              </li>
+            </ul>
+            <button className="mt-5 w-full py-3 rounded-2xl hover:bg-orange-500 hover:text-slate-50 transition ease-in text-clip  text-orange-500 ring-1 ring-orange-500">
+              BUY NOW
+            </button>
           </div>
         </div>
       </div>
