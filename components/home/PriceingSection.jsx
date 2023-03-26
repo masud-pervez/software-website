@@ -25,7 +25,7 @@ const PriceingSection = () => {
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-once="true"
-            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+            className="bg-white border-y-4 border-orange-400 animated-hover-icon hover:shadow-xl transition p-10 shadow-md"
           >
             <div className="flex flex-row">
               <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
@@ -80,7 +80,7 @@ const PriceingSection = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-once="true"
-            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+            className="bg-white border-y-4 border-orange-400 animated-hover-icon hover:shadow-xl transition p-10 shadow-md"
           >
             <div className="flex flex-row">
               <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">
@@ -135,7 +135,7 @@ const PriceingSection = () => {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-once="true"
-            className="bg-white animated-hover-icon hover:shadow-xl transition cursor-pointer p-10 shadow-md"
+            className="bg-white border-y-4 border-orange-400 animated-hover-icon hover:shadow-xl transition p-10 shadow-md"
           >
             <div className="flex flex-row">
               <span className="bg-orange-200 icon p-5 mr-5 rounded-full text-3xl text-orange-500">

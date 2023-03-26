@@ -22,7 +22,6 @@ html{
   overflow: hidden;
   align-items: flex-end;
   transition: 0.4s ease-out;
-  cursor: pointer;
 }
 
 .member img {
@@ -114,7 +113,9 @@ html{
   transition: left ease-in-out 0.3s;
 }
 
-
+section{
+  scroll-snap-align: start;
+}
 /* Animation */
 
 .animate-float-x {
@@ -140,6 +141,17 @@ html{
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+@keyframes float-x {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }
 

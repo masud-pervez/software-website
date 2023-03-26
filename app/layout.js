@@ -1,20 +1,14 @@
 "use client";
-import Navabr from "@/components/Navabr";
 import "./globals.css";
 import "aos/dist/aos.css";
-import Footer from "@/components/Footer";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect } from "react";
 import Aos from "aos";
+import Navabr from "@/components/Navabr";
+import Footer from "@/components/Footer";
 import Loading from "@/components/Loading";
-// import Loading from "@/components/Loading";
 
 export default function RootLayout({ children }) {
-  // const [loading, setLoading] = useState(true);
-
   useEffect(() => {
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 200);
     Aos.init();
   }, []);
 

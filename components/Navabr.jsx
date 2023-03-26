@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 120) {
+    if (window.scrollY >= 180) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -14,7 +14,6 @@ const Navbar = () => {
   };
 
   const pathname = usePathname();
-  console.log("pathname:", pathname);
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavbarColor);
@@ -22,9 +21,9 @@ const Navbar = () => {
 
   return (
     <nav
-      // data-aos="fade-down"
-      // data-aos-once="true"
-      className={`fixed transition ease-in-out top-0 w-full z-30  ${
+      className={`${
+        pathname === "/" && "fixed"
+      } transition ease-in-out top-0 w-full z-30  ${
         colorChange ? "bg-slate-100 shadow-md" : "bg-transparent"
       }`}
     >
@@ -40,7 +39,7 @@ const Navbar = () => {
                   className={`text-lg ${
                     pathname === "/" ? "text-orange-700" : "text-slate-700"
                   }`}
-                  href="#home"
+                  href="/home"
                 >
                   Home
                 </a>
@@ -72,11 +71,13 @@ const Navbar = () => {
               <li className="inline-block ml-5">
                 <a
                   className={`text-lg ${
-                    pathname === "/team" ? "text-orange-700" : "text-slate-700"
+                    pathname === "/pricing"
+                      ? "text-orange-700"
+                      : "text-slate-700"
                   }`}
-                  href="/team"
+                  href="/pricing"
                 >
-                  Team
+                  Price
                 </a>
               </li>
               <li className="inline-block ml-5">
