@@ -14,7 +14,6 @@ html{
 .member {
   width: 280px;
   height: 300px;
-  border-radius: 10px;
   padding: 1.5rem;
   background: white;
   position: relative;
@@ -32,7 +31,6 @@ html{
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 15px;
 }
 .member .member-info {
   opacity: 0;

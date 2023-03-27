@@ -21,9 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        pathname === "/" && "fixed"
-      } transition ease-in-out top-0 w-full z-30  ${
+      className={` fixed transition ease-in-out top-0 w-full z-30  ${
         colorChange ? "bg-slate-100 shadow-md" : "bg-transparent"
       }`}
     >
@@ -39,7 +37,7 @@ const Navbar = () => {
                   className={`text-lg ${
                     pathname === "/" ? "text-orange-700" : "text-slate-700"
                   }`}
-                  href="/home"
+                  href="/"
                 >
                   Home
                 </a>
@@ -77,7 +75,7 @@ const Navbar = () => {
                   }`}
                   href="/pricing"
                 >
-                  Price
+                  Pricing
                 </a>
               </li>
               <li className="inline-block ml-5">

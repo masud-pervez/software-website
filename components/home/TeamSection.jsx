@@ -33,13 +33,10 @@ const TeamSection = () => {
               </div>
               <div className="social">
                 <a href="">
-                  <BsFacebook />
-                </a>
-                <a href="">
                   <BsLinkedin />
                 </a>
                 <a href="">
-                  <BsInstagram />
+                  <BsGithub />
                 </a>
               </div>
             </div>
@@ -58,13 +55,7 @@ const TeamSection = () => {
               </div>
               <div className="social">
                 <a href="">
-                  <BsFacebook />
-                </a>
-                <a href="">
                   <BsLinkedin />
-                </a>
-                <a href="">
-                  <BsInstagram />
                 </a>
                 <a href="">
                   <BsGithub />
@@ -78,7 +69,7 @@ const TeamSection = () => {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            <img src="/member/ruhit-.png" className="w-64" alt="" />
+            <img src="/member/ruhit.png" className="w-64" alt="" />
             <div className="member-info">
               <div className="member-info-content">
                 <h4>Ruhit Hassan</h4>
@@ -86,13 +77,7 @@ const TeamSection = () => {
               </div>
               <div className="social">
                 <a href="">
-                  <BsFacebook />
-                </a>
-                <a href="">
                   <BsLinkedin />
-                </a>
-                <a href="">
-                  <BsInstagram />
                 </a>
                 <a href="">
                   <BsGithub />
@@ -114,13 +99,7 @@ const TeamSection = () => {
               </div>
               <div className="social">
                 <a href="">
-                  <BsFacebook />
-                </a>
-                <a href="">
                   <BsLinkedin />
-                </a>
-                <a href="">
-                  <BsInstagram />
                 </a>
                 <a href="">
                   <BsGithub />

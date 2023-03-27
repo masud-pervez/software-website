@@ -6,6 +6,7 @@ import Aos from "aos";
 import Navabr from "@/components/Navabr";
 import Footer from "@/components/Footer";
 import Loading from "@/components/Loading";
+import BackToTop from "@/components/BackToTop";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Suspense fallback={<Loading />}>
           <Navabr />
           {children}
+          <BackToTop />
           <Footer />
         </Suspense>
       </body>

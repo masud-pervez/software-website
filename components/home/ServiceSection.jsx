@@ -22,7 +22,7 @@ const ServiceSection = () => {
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-once="true"
-            className="bg-white hover:shadow-xl transition cursor-pointer shadow-md  py-10 px-5 flex flex-row"
+            className="bg-white hover:shadow-xl transition cursor-pointer shadow-md py-10 px-5 flex flex-row"
           >
             <div>
               <img src="/hero/service.svg" className="h-auto w-40" alt="" />
